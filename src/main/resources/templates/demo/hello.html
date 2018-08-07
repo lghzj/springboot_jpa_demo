@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>hello</title>
+</head>
+<body>
+    <div>
+        <p th:text="${message}"></p>
+    </div>
+    <div th:each="u : ${users}">
+        <p th:text="${u.userName}">name</p>
+    </div>
+</body>
+</html>
